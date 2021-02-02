@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vermaa.msoe.lab09.sample.Controller">
+   <children>
+      <VBox layoutX="419.0" layoutY="70.0" prefHeight="200.0" prefWidth="127.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#loadImage" prefHeight="25.0" prefWidth="170.0" text="Load Image">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#saveImage" prefHeight="25.0" prefWidth="137.0" text="Save Image" />
+            <Button mnemonicParsing="false" onAction="#negateImage" prefHeight="25.0" prefWidth="206.0" text="To Negative" />
+            <Button mnemonicParsing="false" onAction="#greyImage" prefHeight="25.0" prefWidth="272.0" text="To Grayscale" />
+            <Button mnemonicParsing="false" onAction="#reddenImage" prefHeight="25.0" prefWidth="272.0" text="To Red" />
+            <Button mnemonicParsing="false" onAction="#redGreyImage" prefHeight="25.0" prefWidth="272.0" text="To Red Grayscale" />
+            <Button mnemonicParsing="false" onAction="#reloadImage" prefHeight="25.0" prefWidth="242.0" text="Reload Image" />
+            <Button mnemonicParsing="false" onAction="#showOther" prefHeight="25.0" prefWidth="242.0" text="Show Filter" />
+         </children>
+      </VBox>
+      <ImageView fx:id="mainImage" fitHeight="318.0" fitWidth="407.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="HexColorLabel" layoutX="28.0" layoutY="327.0" prefHeight="59.0" prefWidth="305.0" text="HexColor: " textAlignment="CENTER" />
+   </children>
+</Pane>
